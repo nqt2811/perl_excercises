@@ -30,5 +30,5 @@ To run any script:
 ```bash
 perl lab1_variables.pl
 
-##📚 **Purpose**
+## 📚 Purpose
 These labs were part of my scripting training program, and they reflect my learning journey. Though the exercises are educational in nature, they demonstrate practical scripting knowledge, which I can apply in automation, DevOps, or data processing contexts.
