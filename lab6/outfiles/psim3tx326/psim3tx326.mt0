@@ -1,0 +1,467 @@
+$DATA1 SOURCE='HSPICE' VERSION='O-2018.09' PARAM_COUNT=0
+.TITLE '*TITLE: psim3tx326.sp'
+ param_stt        param_modelfile  param_rmodellib  param_cmodellib 
+ param_bjtmodellib param_mciterations param_typ       
+ param_cmax       param_cmin       param_rcmax      param_rcmin     
+ param_vddio      param_vdd        param_temp       param_ddr3u     
+ param_ddr2       param_id         param_lpddr4x    param_lpddr4    
+ param_lpddr3     param_ddr5       param_ddr4       param_ddr3      
+ param_lpddr2     param_ddr3l      param_datarate   param_vavg_scale
+ param_vcal_scale param_range      param_pu_cal     param_ui        
+ param_rref_scale param_ibias      param_trf_core   param_trf_io    
+ param_trf_pwr    param_trf_sim2   param_cload_core param_cload_io  
+ param_init_vibias param_final_vibias param_init_vddio
+ param_init_vssio param_init_vdd   param_init_vss   param_final_vddio
+ param_final_vssio param_final_vdd  param_final_vss 
+ param_init_podterm param_init_gndterm param_init_reten_n_ub
+ param_final_podterm param_final_gndterm param_final_reten_n_ub
+ param_sim        param_case       param_init_padp  param_init_padn 
+ param_init_a     param_init_oe    param_init_read  param_init_ie   
+ param_init_pi    param_init_rx_standbyb param_init_reten_n_hv
+ param_init_vref_udio param_pad_ext_source param_pad_ext_load
+ param_min_vpad   param_final_padp param_final_padn param_final_a   
+ param_final_oe   param_final_read param_final_ie   param_final_pi  
+ param_final_rx_standbyb param_final_reten_n_hv param_final_vref_udio
+ param_max_vpad   param_extracted_netlist param_min_bit_width
+ vdd_voltage_0    vdd_voltage_20ui vdd_current_0    vdd_current_20ui
+ vdd_rms_current_46ui_to_48ui vdd_vi_0         vdd_vi_20ui     
+ vdd_vi_rms_46ui_to_48ui vddio_voltage_0  vddio_voltage_20ui
+ vddio_current_0  vddio_current_20ui vddio_rms_current_46ui_to_48ui
+ vddio_vi_0       vddio_vi_20ui    vddio_vi_rms_46ui_to_48ui
+ vss_voltage_0    vss_voltage_20ui vss_current_0    vss_current_20ui
+ vss_rms_current_46ui_to_48ui vss_vi_0         vss_vi_20ui     
+ vssio_voltage_0  vssio_voltage_20ui vssio_current_0 
+ vssio_current_20ui vssio_rms_current_46ui_to_48ui vssio_vi_0      
+ vssio_vi_20ui    a_voltage_0      a_voltage_20ui   a_current_0     
+ a_current_20ui   a_rms_current_46ui_to_48ui a_vi_0          
+ a_vi_20ui        a_deltav_30_70pct a_average       
+ a_integrali_30_70pct_0ui a_integrali_30_70pct_20ui
+ a_input_cap_30_70pct_0ui a_input_cap_30_70pct_20ui
+ a_input_cap_30_70pct a_input_derivi_50pct a_input_res_50pct
+ oe_voltage_0     oe_voltage_20ui  oe_current_0     oe_current_20ui 
+ oe_rms_current_46ui_to_48ui oe_vi_0          oe_vi_20ui      
+ oe_deltav_30_70pct oe_average       oe_integrali_30_70pct
+ oe_integrali_10000xslower_30_70pct oe_input_cap_30_70pct
+ oe_input_derivi_50pct oe_input_res_50pct podterm_voltage_0
+ podterm_voltage_20ui podterm_current_0 podterm_current_20ui
+ podterm_rms_current_46ui_to_48ui podterm_vi_0     podterm_vi_20ui 
+ podterm_deltav_30_70pct podterm_average  podterm_integrali_30_70pct
+ podterm_integrali_10000xslower_30_70pct podterm_input_cap_30_70pct
+ podterm_input_derivi_50pct podterm_input_res_50pct gndterm_voltage_0
+ gndterm_voltage_20ui gndterm_current_0 gndterm_current_20ui
+ gndterm_rms_current_46ui_to_48ui gndterm_vi_0     gndterm_vi_20ui 
+ gndterm_deltav_30_70pct gndterm_average  gndterm_integrali_30_70pct
+ gndterm_integrali_10000xslower_30_70pct gndterm_input_cap_30_70pct
+ gndterm_input_derivi_50pct gndterm_input_res_50pct read_voltage_0  
+ read_voltage_20ui read_current_0   read_current_20ui
+ read_rms_current_46ui_to_48ui read_vi_0        read_vi_20ui    
+ read_deltav_30_70pct read_average     read_integrali_30_70pct
+ read_integrali_10000xslower_30_70pct read_input_cap_30_70pct
+ read_input_derivi_50pct read_input_res_50pct ie_voltage_0    
+ ie_voltage_20ui  ie_current_0     ie_current_20ui 
+ ie_rms_current_46ui_to_48ui ie_vi_0          ie_vi_20ui      
+ ie_deltav_30_70pct ie_average       ie_integrali_30_70pct
+ ie_integrali_10000xslower_30_70pct ie_input_cap_30_70pct
+ ie_input_derivi_50pct ie_input_res_50pct rx_standbyb_voltage_0
+ rx_standbyb_voltage_20ui rx_standbyb_current_0
+ rx_standbyb_current_20ui rx_standbyb_rms_current_46ui_to_48ui
+ rx_standbyb_vi_0 rx_standbyb_vi_20ui rx_standbyb_deltav_30_70pct
+ rx_standbyb_average rx_standbyb_integrali_30_70pct
+ rx_standbyb_integrali_10000xslower_30_70pct
+ rx_standbyb_input_cap_30_70pct rx_standbyb_input_derivi_50pct
+ rx_standbyb_input_res_50pct reten_n_ub_voltage_0
+ reten_n_ub_voltage_20ui reten_n_ub_current_0 reten_n_ub_current_20ui
+ reten_n_ub_rms_current_46ui_to_48ui reten_n_ub_vi_0 
+ reten_n_ub_vi_20ui reten_n_ub_deltav_30_70pct reten_n_ub_average
+ reten_n_ub_integrali_30_70pct
+ reten_n_ub_integrali_10000xslower_30_70pct
+ reten_n_ub_input_cap_30_70pct reten_n_ub_input_derivi_50pct
+ reten_n_ub_input_res_50pct reten_n_hv_voltage_0
+ reten_n_hv_voltage_20ui reten_n_hv_current_0 reten_n_hv_current_20ui
+ reten_n_hv_rms_current_46ui_to_48ui reten_n_hv_vi_0 
+ reten_n_hv_vi_20ui reten_n_hv_deltav_30_70pct reten_n_hv_average
+ reten_n_hv_integrali_30_70pct
+ reten_n_hv_integrali_10000xslower_30_70pct
+ reten_n_hv_input_cap_30_70pct reten_n_hv_input_derivi_50pct
+ reten_n_hv_input_res_50pct dqs_voltage_0    dqs_voltage_20ui
+ dqs_current_0    dqs_current_20ui dqs_rms_current_46ui_to_48ui
+ dqs_vi_0         dqs_vi_20ui      dqs_deltav      
+ dqs_voltage_10pct_level dqs_voltage_50pct_level
+ dqs_voltage_90pct_level dqs_delay_cross1_to_cross2
+ dqs_delay_cross1_to_cross3 dqs_delay_cross1_to_cross4
+ dqs_delay_cross1_to_cross5 dqs_delay_cross1_to_cross6
+ dqs_delay_cross1_to_cross7 dqs_delay_cross1_to_cross8
+ dqs_delay_cross1_to_cross9 dqs_delay_cross1_to_cross10
+ dqs_delay_cross1_to_cross11 dqs_delay_cross1_to_cross12
+ dqs_jitter_cross1_to_cross2 dqs_jitter_cross1_to_cross3
+ dqs_jitter_cross1_to_cross4 dqs_jitter_cross1_to_cross5
+ dqs_jitter_cross1_to_cross6 dqs_jitter_cross1_to_cross7
+ dqs_jitter_cross1_to_cross8 dqs_jitter_cross1_to_cross9
+ dqs_jitter_cross1_to_cross10 dqs_jitter_cross1_to_cross11
+ dqs_jitter_cross1_to_cross12 dqs_jitter_max   dqs_jitter_min  
+ dqs_jitter       dqs_jitter_x100_divby_2ui
+ dqs_1st_isolated_10pct_pulse_width dqs_1st_isolated_50pct_pulse_width
+ dqs_1st_isolated_90pct_pulse_width dqs_2nd_isolated_10pct_pulse_width
+ dqs_2nd_isolated_50pct_pulse_width dqs_2nd_isolated_90pct_pulse_width
+ dqs_1st_minus_2nd_isolated_50pct_pulse_width
+ dqs_1st_isolated_10pct_pulse_width_x100_divby_2ui
+ dqs_1st_isolated_50pct_pulse_width_x100_divby_2ui
+ dqs_1st_isolated_90pct_pulse_width_x100_divby_2ui
+ dqs_2nd_isolated_10pct_pulse_width_x100_divby_2ui
+ dqs_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ dqs_2nd_isolated_90pct_pulse_width_x100_divby_2ui
+ dqs_1st_minus_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ dqs_crowded_hi_50pct_pulse_width dqs_dutycycle   
+ dqs_dutycycle_minus_1st_isolated_50pct_pulse_width_x100_divby_2ui
+ dqs_dutycycle_minus_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ dqs_risetime     dqs_falltime     dqsb_voltage_0   dqsb_voltage_20ui
+ dqsb_current_0   dqsb_current_20ui dqsb_rms_current_46ui_to_48ui
+ dqsb_vi_0        dqsb_vi_20ui     dqsb_deltav     
+ dqsb_voltage_10pct_level dqsb_voltage_50pct_level
+ dqsb_voltage_90pct_level dqsb_delay_cross1_to_cross2
+ dqsb_delay_cross1_to_cross3 dqsb_delay_cross1_to_cross4
+ dqsb_delay_cross1_to_cross5 dqsb_delay_cross1_to_cross6
+ dqsb_delay_cross1_to_cross7 dqsb_delay_cross1_to_cross8
+ dqsb_delay_cross1_to_cross9 dqsb_delay_cross1_to_cross10
+ dqsb_delay_cross1_to_cross11 dqsb_delay_cross1_to_cross12
+ dqsb_jitter_cross1_to_cross2 dqsb_jitter_cross1_to_cross3
+ dqsb_jitter_cross1_to_cross4 dqsb_jitter_cross1_to_cross5
+ dqsb_jitter_cross1_to_cross6 dqsb_jitter_cross1_to_cross7
+ dqsb_jitter_cross1_to_cross8 dqsb_jitter_cross1_to_cross9
+ dqsb_jitter_cross1_to_cross10 dqsb_jitter_cross1_to_cross11
+ dqsb_jitter_cross1_to_cross12 dqsb_jitter_max  dqsb_jitter_min 
+ dqsb_jitter      dqsb_jitter_x100_divby_2ui
+ dqsb_1st_isolated_10pct_pulse_width
+ dqsb_1st_isolated_50pct_pulse_width
+ dqsb_1st_isolated_90pct_pulse_width
+ dqsb_2nd_isolated_10pct_pulse_width
+ dqsb_2nd_isolated_50pct_pulse_width
+ dqsb_2nd_isolated_90pct_pulse_width
+ dqsb_1st_minus_2nd_isolated_50pct_pulse_width
+ dqsb_1st_isolated_10pct_pulse_width_x100_divby_2ui
+ dqsb_1st_isolated_50pct_pulse_width_x100_divby_2ui
+ dqsb_1st_isolated_90pct_pulse_width_x100_divby_2ui
+ dqsb_2nd_isolated_10pct_pulse_width_x100_divby_2ui
+ dqsb_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ dqsb_2nd_isolated_90pct_pulse_width_x100_divby_2ui
+ dqsb_1st_minus_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ dqsb_crowded_hi_50pct_pulse_width dqsb_dutycycle  
+ dqsb_dutycycle_minus_1st_isolated_50pct_pulse_width_x100_divby_2ui
+ dqsb_dutycycle_minus_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ dqsb_risetime    dqsb_falltime    y_voltage_0      y_voltage_20ui  
+ y_current_0      y_current_20ui   y_rms_current_46ui_to_48ui
+ y_vi_0           y_vi_20ui        y_deltav        
+ y_voltage_10pct_level y_voltage_50pct_level y_voltage_90pct_level
+ y_delay_cross1_to_cross2 y_delay_cross1_to_cross3
+ y_delay_cross1_to_cross4 y_delay_cross1_to_cross5
+ y_delay_cross1_to_cross6 y_delay_cross1_to_cross7
+ y_delay_cross1_to_cross8 y_delay_cross1_to_cross9
+ y_delay_cross1_to_cross10 y_delay_cross1_to_cross11
+ y_delay_cross1_to_cross12 y_jitter_cross1_to_cross2
+ y_jitter_cross1_to_cross3 y_jitter_cross1_to_cross4
+ y_jitter_cross1_to_cross5 y_jitter_cross1_to_cross6
+ y_jitter_cross1_to_cross7 y_jitter_cross1_to_cross8
+ y_jitter_cross1_to_cross9 y_jitter_cross1_to_cross10
+ y_jitter_cross1_to_cross11 y_jitter_cross1_to_cross12
+ y_jitter_max     y_jitter_min     y_jitter        
+ y_jitter_x100_divby_2ui y_1st_isolated_10pct_pulse_width
+ y_1st_isolated_50pct_pulse_width y_1st_isolated_90pct_pulse_width
+ y_2nd_isolated_10pct_pulse_width y_2nd_isolated_50pct_pulse_width
+ y_2nd_isolated_90pct_pulse_width
+ y_1st_minus_2nd_isolated_50pct_pulse_width
+ y_1st_isolated_10pct_pulse_width_x100_divby_2ui
+ y_1st_isolated_50pct_pulse_width_x100_divby_2ui
+ y_1st_isolated_90pct_pulse_width_x100_divby_2ui
+ y_2nd_isolated_10pct_pulse_width_x100_divby_2ui
+ y_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ y_2nd_isolated_90pct_pulse_width_x100_divby_2ui
+ y_1st_minus_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ y_crowded_hi_50pct_pulse_width y_dutycycle     
+ y_dutycycle_minus_1st_isolated_50pct_pulse_width_x100_divby_2ui
+ y_dutycycle_minus_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ y_risetime       y_falltime       padp_voltage_0   padp_voltage_20ui
+ padp_current_0   padp_current_20ui padp_rms_current_46ui_to_48ui
+ padp_vi_0        padp_vi_20ui     padp_vdc_init_diff
+ padp_vdc_final_diff padp_deltav_30_70pct padp_average    
+ padp_integrali_30_70pct padp_integrali_10000xslower_30_70pct
+ padp_input_cap_30_70pct padp_input_derivi_50pct padp_input_res_50pct
+ padp_deltai      padp_deltav      padp_voltage_10pct_level
+ padp_voltage_50pct_level padp_voltage_90pct_level
+ padp_delay_cross1_to_cross2 padp_delay_cross1_to_cross3
+ padp_delay_cross1_to_cross4 padp_delay_cross1_to_cross5
+ padp_delay_cross1_to_cross6 padp_delay_cross1_to_cross7
+ padp_delay_cross1_to_cross8 padp_delay_cross1_to_cross9
+ padp_delay_cross1_to_cross10 padp_delay_cross1_to_cross11
+ padp_delay_cross1_to_cross12 padp_jitter_cross1_to_cross2
+ padp_jitter_cross1_to_cross3 padp_jitter_cross1_to_cross4
+ padp_jitter_cross1_to_cross5 padp_jitter_cross1_to_cross6
+ padp_jitter_cross1_to_cross7 padp_jitter_cross1_to_cross8
+ padp_jitter_cross1_to_cross9 padp_jitter_cross1_to_cross10
+ padp_jitter_cross1_to_cross11 padp_jitter_cross1_to_cross12
+ padp_jitter_max  padp_jitter_min  padp_jitter     
+ padp_jitter_x100_divby_2ui padp_1st_isolated_10pct_pulse_width
+ padp_1st_isolated_50pct_pulse_width
+ padp_1st_isolated_90pct_pulse_width
+ padp_2nd_isolated_10pct_pulse_width
+ padp_2nd_isolated_50pct_pulse_width
+ padp_2nd_isolated_90pct_pulse_width
+ padp_1st_minus_2nd_isolated_50pct_pulse_width
+ padp_1st_isolated_10pct_pulse_width_x100_divby_2ui
+ padp_1st_isolated_50pct_pulse_width_x100_divby_2ui
+ padp_1st_isolated_90pct_pulse_width_x100_divby_2ui
+ padp_2nd_isolated_10pct_pulse_width_x100_divby_2ui
+ padp_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ padp_2nd_isolated_90pct_pulse_width_x100_divby_2ui
+ padp_1st_minus_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ padp_crowded_hi_50pct_pulse_width padp_dutycycle  
+ padp_dutycycle_minus_1st_isolated_50pct_pulse_width_x100_divby_2ui
+ padp_dutycycle_minus_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ padp_risetime    padp_falltime    padp_rthevenin   padp_vthevenin  
+ padn_voltage_0   padn_voltage_20ui padn_current_0   padn_current_20ui
+ padn_rms_current_46ui_to_48ui padn_vi_0        padn_vi_20ui    
+ padn_vdc_init_diff padn_vdc_final_diff padn_deltav_30_70pct
+ padn_average     padn_integrali_30_70pct
+ padn_integrali_10000xslower_30_70pct padn_input_cap_30_70pct
+ padn_input_derivi_50pct padn_input_res_50pct padn_deltai     
+ padn_deltav      padn_voltage_10pct_level padn_voltage_50pct_level
+ padn_voltage_90pct_level padn_delay_cross1_to_cross2
+ padn_delay_cross1_to_cross3 padn_delay_cross1_to_cross4
+ padn_delay_cross1_to_cross5 padn_delay_cross1_to_cross6
+ padn_delay_cross1_to_cross7 padn_delay_cross1_to_cross8
+ padn_delay_cross1_to_cross9 padn_delay_cross1_to_cross10
+ padn_delay_cross1_to_cross11 padn_delay_cross1_to_cross12
+ padn_jitter_cross1_to_cross2 padn_jitter_cross1_to_cross3
+ padn_jitter_cross1_to_cross4 padn_jitter_cross1_to_cross5
+ padn_jitter_cross1_to_cross6 padn_jitter_cross1_to_cross7
+ padn_jitter_cross1_to_cross8 padn_jitter_cross1_to_cross9
+ padn_jitter_cross1_to_cross10 padn_jitter_cross1_to_cross11
+ padn_jitter_cross1_to_cross12 padn_jitter_max  padn_jitter_min 
+ padn_jitter      padn_jitter_x100_divby_2ui
+ padn_1st_isolated_10pct_pulse_width
+ padn_1st_isolated_50pct_pulse_width
+ padn_1st_isolated_90pct_pulse_width
+ padn_2nd_isolated_10pct_pulse_width
+ padn_2nd_isolated_50pct_pulse_width
+ padn_2nd_isolated_90pct_pulse_width
+ padn_1st_minus_2nd_isolated_50pct_pulse_width
+ padn_1st_isolated_10pct_pulse_width_x100_divby_2ui
+ padn_1st_isolated_50pct_pulse_width_x100_divby_2ui
+ padn_1st_isolated_90pct_pulse_width_x100_divby_2ui
+ padn_2nd_isolated_10pct_pulse_width_x100_divby_2ui
+ padn_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ padn_2nd_isolated_90pct_pulse_width_x100_divby_2ui
+ padn_1st_minus_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ padn_crowded_hi_50pct_pulse_width padn_dutycycle  
+ padn_dutycycle_minus_1st_isolated_50pct_pulse_width_x100_divby_2ui
+ padn_dutycycle_minus_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ padn_risetime    padn_falltime    padn_rthevenin   padn_vthevenin  
+ vdd_leakage_power_0 vdd_leakage_power_20ui vddio_leakage_power_0
+ vddio_leakage_power_20ui sum_of_all_power_pin_leakage_power_0
+ sum_of_all_power_pin_leakage_power_20ui padp_padn_voltage_0
+ padp_padn_voltage_20ui padp_padn_deltav padp_padn_deltaabsv
+ padp_padn_voltage_10pct_level padp_padn_voltage_50pct_level
+ padp_padn_voltage_90pct_level
+ padp_padn_1st_isolated_10pct_pulse_width
+ padp_padn_1st_isolated_50pct_pulse_width
+ padp_padn_1st_isolated_90pct_pulse_width
+ padp_padn_2nd_isolated_10pct_pulse_width
+ padp_padn_2nd_isolated_50pct_pulse_width
+ padp_padn_2nd_isolated_90pct_pulse_width
+ padp_padn_1st_minus_2nd_isolated_50pct_pulse_width
+ padp_padn_1st_isolated_10pct_pulse_width_x100_divby_2ui
+ padp_padn_1st_isolated_50pct_pulse_width_x100_divby_2ui
+ padp_padn_1st_isolated_90pct_pulse_width_x100_divby_2ui
+ padp_padn_2nd_isolated_10pct_pulse_width_x100_divby_2ui
+ padp_padn_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ padp_padn_2nd_isolated_90pct_pulse_width_x100_divby_2ui
+ padp_padn_1st_minus_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ padp_padn_crowded_hi_50pct_pulse_width padp_padn_cross9_is_risingedge
+ padp_padn_dutycycle
+ padp_padn_dutycycle_minus_1st_isolated_50pct_pulse_width_x100_divby_2ui
+ padp_padn_dutycycle_minus_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ padp_rise4_to_padn_rise4_delay padp_rise4_to_padn_rise4_dutycycle
+ padp_fall4_to_padn_fall4_delay padp_fall4_to_padn_fall4_dutycycle
+ padn_padp_voltage_0 padn_padp_voltage_20ui padn_padp_deltav
+ padn_padp_deltaabsv padn_padp_voltage_10pct_level
+ padn_padp_voltage_50pct_level padn_padp_voltage_90pct_level
+ padn_padp_1st_isolated_10pct_pulse_width
+ padn_padp_1st_isolated_50pct_pulse_width
+ padn_padp_1st_isolated_90pct_pulse_width
+ padn_padp_2nd_isolated_10pct_pulse_width
+ padn_padp_2nd_isolated_50pct_pulse_width
+ padn_padp_2nd_isolated_90pct_pulse_width
+ padn_padp_1st_minus_2nd_isolated_50pct_pulse_width
+ padn_padp_1st_isolated_10pct_pulse_width_x100_divby_2ui
+ padn_padp_1st_isolated_50pct_pulse_width_x100_divby_2ui
+ padn_padp_1st_isolated_90pct_pulse_width_x100_divby_2ui
+ padn_padp_2nd_isolated_10pct_pulse_width_x100_divby_2ui
+ padn_padp_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ padn_padp_2nd_isolated_90pct_pulse_width_x100_divby_2ui
+ padn_padp_1st_minus_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ padn_padp_crowded_hi_50pct_pulse_width padn_padp_cross9_is_risingedge
+ padn_padp_dutycycle
+ padn_padp_dutycycle_minus_1st_isolated_50pct_pulse_width_x100_divby_2ui
+ padn_padp_dutycycle_minus_2nd_isolated_50pct_pulse_width_x100_divby_2ui
+ padn_rise4_to_padp_rise4_delay padn_rise4_to_padp_rise4_dutycycle
+ padn_fall4_to_padp_fall4_delay padn_fall4_to_padp_fall4_dutycycle
+ tdly_rise_a_to_padp tdly_fall_a_to_padp tdly_rise_a_to_padn
+ tdly_fall_a_to_padn tdly_rise_a_to_padp_padn tdly_fall_a_to_padp_padn
+ tdly_rise_a_to_padn_padp tdly_fall_a_to_padn_padp temper          
+ alter#          
+    5.00000         33.00000          3.00000          3.00000      
+    3.00000          0.               0.               0.           
+    0.               0.               0.               1.26000      
+    0.78300        -40.00000          0.               0.           
+    2.00000          0.               0.               0.           
+    0.               1.00000          0.               0.           
+    0.             2.6660e+09         0.50000          0.50000      
+    1.00000          0.             3.7509e-10         1.00000      
+  1.0000e-04       3.0000e-11       1.5000e-10       1.0000e-04     
+    1.00000        5.0000e-14       1.0000e-12         1.00000      
+    1.00000          1.00000          1.00000          1.00000      
+    1.00000          1.00000          1.00000          1.00000      
+    1.00000          1.00000          1.00000          1.00000      
+    1.00000          1.00000          1.00000          3.00000      
+    1.00000          0.               0.               0.           
+    1.00000          0.               0.               0.           
+    1.00000          1.00000          1.00000          0.           
+    1.00000          0.               0.               0.           
+    1.00000          1.00000          0.               0.           
+    0.               1.00000          1.00000          1.00000      
+    0.               1.00000        3.7509e-10         0.78300      
+    0.78300        1.8190e-05       1.9704e-05       1.2120e-02     
+  1.4242e-05       1.5428e-05       9.4901e-03         1.26000      
+    1.26000        8.0976e-05       8.2988e-05       2.7078e-02     
+  1.0203e-04       1.0457e-04       3.4119e-02         0.           
+    0.            -9.8953e-05      -1.0149e-04       2.1082e-02     
+    0.               0.               0.               0.           
+ -1.5878e-02      -1.5877e-02       3.5924e-02         0.           
+    0.               0.               0.78300       -7.0270e-11     
+  1.0379e-10       4.5551e-05         0.             8.1267e-11     
+    0.31320          0.39150        1.7262e-15      -1.7343e-15     
+  5.5114e-15       5.5373e-15       5.5244e-15        failed        
+   failed            0.78300          0.78300        1.0430e-10     
+  1.0430e-10       1.3659e-06       8.1667e-11       8.1670e-11     
+    0.               0.               0.               0.           
+  999.00000       -999.00000       -999.00000          1.00000      
+    1.00000        2.0803e-10       2.0802e-10       1.0794e-06     
+  2.0803e-10       2.0802e-10         0.               0.           
+    0.               0.             999.00000       -999.00000      
+ -999.00000          0.               0.            -1.1982e-10     
+ -1.1981e-10       7.1042e-06         0.               0.           
+    0.               0.               0.               0.           
+  999.00000       -999.00000       -999.00000          0.           
+    0.            -7.0270e-11      -7.0270e-11       1.6196e-07     
+    0.               0.               0.               0.           
+    0.               0.             999.00000       -999.00000      
+ -999.00000          0.               0.            -1.4263e-11     
+ -1.2149e-11       1.3473e-07         0.               0.           
+    0.               0.               0.               0.           
+  999.00000       -999.00000       -999.00000          0.78300      
+    0.78300        1.6034e-12       5.7170e-13       7.8110e-07     
+  1.2555e-12       4.4764e-13         0.               0.           
+    0.               0.             999.00000       -999.00000      
+ -999.00000          1.26000          1.26000          0.           
+ -3.8268e-14       3.9333e-07         0.            -4.8217e-14     
+    0.               0.               0.               0.           
+  999.00000       -999.00000       -999.00000          1.26000      
+    1.26000          0.             1.2928e-11       6.7477e-06     
+    0.             1.6289e-11         0.               0.           
+    0.               0.             999.00000       -999.00000      
+ -999.00000        3.3449e-05       3.3450e-05      -2.5123e-11     
+ -1.3167e-15       2.3857e-12      -8.4034e-16      -4.4045e-20     
+  9.4772e-10       3.3449e-05       3.3450e-05       3.3450e-05     
+   failed           failed           failed           failed        
+   failed           failed           failed           failed        
+   failed           failed           failed           failed        
+   failed           failed           failed           failed        
+   failed           failed           failed           failed        
+   failed           failed           failed           failed        
+   failed           failed           failed           failed        
+  9.1016e-12        failed           failed          4.0776e-12     
+   failed           failed           failed            1.21324      
+   failed           failed            0.54354         failed        
+   failed           failed           failed           failed        
+   failed           failed            0.78300          0.78300      
+ -5.9792e-12      -1.6826e-16       1.8154e-12      -4.6817e-12     
+ -1.3175e-16       1.0203e-10         0.78300          0.78300      
+    0.78300        4.1471e-09       4.1512e-09       4.1681e-09     
+  4.1779e-09       7.8986e-09       7.9016e-09       7.9185e-09     
+  7.9301e-09       1.1673e-08       1.1677e-08       1.2023e-08     
+  3.9615e-10       2.5183e-11      -3.3338e-09      -7.0749e-09     
+ -3.7293e-09      -7.1021e-09      -7.4604e-09      -7.8239e-09     
+ -4.4556e-09      -4.8267e-09      -4.8560e-09       3.9615e-10     
+ -7.8239e-09       8.2200e-09       1.0957e+03       6.3086e-12     
+  4.1311e-12       1.1195e-11       6.6185e-12       4.0485e-12     
+  7.6985e-12       8.2596e-14         0.84094          0.55067      
+    1.49230          0.88225          0.53966          1.02621      
+  1.1010e-02      -4.1772e-12        -0.55682         -1.10749      
+   -1.09648       -1.1600e-08       1.1656e-08       7.0431e-06     
+  7.0436e-06      -1.1745e-11      -3.0007e-19       2.2020e-14     
+ -8.2721e-17      -2.1136e-24       4.9645e-10       7.0431e-06     
+  7.0433e-06       7.0435e-06        failed           failed        
+   failed           failed           failed           failed        
+   failed           failed           failed           failed        
+   failed           failed           failed           failed        
+   failed           failed           failed           failed        
+   failed           failed           failed           failed        
+   failed           failed           failed           failed        
+   failed           failed           failed           failed        
+   failed           failed           failed           failed        
+   failed           failed           failed           failed        
+   failed           failed           failed           failed        
+   failed           failed           failed           failed        
+    0.49771          1.26000        1.5878e-02      -1.0001e-07     
+  1.0645e-02       7.9025e-03      -1.2602e-07        -0.76229      
+    0.74941          0.               0.               0.           
+    0.             999.00000       -999.00000       -999.00000      
+ -1.5878e-02         0.76229          0.57394          0.87886      
+    1.18377        3.7442e-09       4.1242e-09       7.4947e-09     
+  1.1252e-08       1.1621e-08       1.5003e-08       1.5372e-08     
+  1.5753e-08       1.6121e-08       1.6502e-08       1.6872e-08     
+ -6.6987e-12      -1.8164e-12      -7.1433e-12      -5.2101e-13     
+ -7.2430e-12      -4.7388e-13      -7.0045e-12      -1.4053e-12     
+ -7.6549e-12      -2.0429e-12      -7.1574e-12      -4.7388e-13     
+ -7.6549e-12       7.1810e-12         0.95723        2.1735e-10     
+  3.7998e-10       5.4010e-10       5.3097e-10       3.6837e-10     
+  2.0597e-10       1.1604e-11        28.97226         50.65081      
+   71.99547         70.77821         49.10396         27.45587      
+    1.54685        3.6999e-10        49.32014         -1.33067      
+    0.21617        1.5993e-10       1.6492e-10       -48.00979      
+    1.26000          1.26000          0.49775        1.8367e-09     
+  1.5877e-02       1.0700e-02       2.3142e-09       7.9028e-03     
+    0.76229         -0.74941          0.               0.           
+    0.               0.             999.00000       -999.00000      
+ -999.00000        1.5877e-02        -0.76225          1.18377      
+    0.87888          0.57398        3.7589e-09       4.1248e-09     
+  7.5097e-09       1.1252e-08       1.1635e-08       1.5003e-08     
+  1.5386e-08       1.5752e-08       1.6136e-08       1.6503e-08     
+  1.6886e-08       7.9206e-12      -1.2487e-12       7.8515e-12     
+ -1.2276e-12       7.4855e-12      -8.2230e-13       6.7271e-12     
+ -1.4421e-12       6.7529e-12      -1.4654e-12       7.1117e-12     
+  7.9206e-12      -1.4654e-12       9.3859e-12         1.25114      
+  2.0335e-10       3.6592e-10       5.2567e-10       5.4374e-10     
+  3.8381e-10       2.2120e-10      -1.7882e-11        27.10713      
+   48.77773         70.07221         72.47997         51.16145      
+   29.48646         -2.38372       -3.8336e-10        48.89780      
+    0.12006         -2.26365        1.5974e-10       1.6518e-10     
+  -48.00986          1.26000        1.4243e-05       1.5429e-05     
+  8.0045e-03       8.0072e-03       8.0188e-03       8.0226e-03     
+   -0.76229          0.76225          1.52454       -3.9396e-05     
+   -0.60984       -1.9698e-05         0.60980        2.1004e-10     
+  3.7253e-10       5.3361e-10       5.3780e-10       3.7671e-10     
+  2.1279e-10      -4.1718e-12        27.99890         49.65883      
+   71.12998         71.68842         50.21493         28.36531      
+   -0.55610        3.7691e-10         1.00000         50.24172      
+    0.58290        2.6796e-02       3.8228e-10        49.04218      
+ -3.7137e-10        50.49626          0.76229         -0.76225      
+   -1.52454       -3.9396e-05         0.60984        1.9698e-05     
+   -0.60980        2.1004e-10       3.7253e-10       5.3361e-10     
+  5.3780e-10       3.7671e-10       2.1279e-10      -4.1718e-12     
+   27.99890         49.65883         71.12998         71.68842      
+   50.21493         28.36531         -0.55610        3.7691e-10     
+    0.              49.75828        9.9446e-02        -0.45665      
+ -3.8228e-10        50.95782        3.7137e-10        49.50374      
+  4.4848e-10       4.4175e-10       4.5451e-10       4.4580e-10     
+  4.4719e-10       4.4880e-10       4.4880e-10       4.4719e-10     
+  -40.00000       1               

@@ -1,0 +1,19 @@
+###################################################################################
+Write perl script ex4.pl with below requirements:
+
+1. Input: **Use argument**
+  - 1 operator : add|sub|mul|div|exp|mod (*)
+  - 2 numbers  : elements for operator
+2. Output:
+  - Check true format: ex4.pl operator num1 num2 and execute
+    + If numbers of argument is not 3, exit after print the warning:
+      "Wrong format. Please use: ex4.pl operator num1 num2"
+    + If operator does not match any case of (*), exit after print the warning:
+      "Please use one of supported operator: add|sub|mul|div|exp|mod"
+    + If one of num1 or num2 is not number, exit after print the warning:
+      "Please use number for element of operator"
+    + If operator is div|mod and num2 is zero, exit after print the warning:
+      "Can not div|mod by zero"
+    + Default case: execute operator and print the result
+
+###################################################################################

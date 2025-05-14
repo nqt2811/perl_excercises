@@ -1,0 +1,2 @@
+permutation,mode,param_modelfile,param_rmodellib,param_cmodellib,param_bjtmodellib,param_mciterations,param_typ,param_cmax,param_cmin,param_vddio,param_vdd,param_temp,param_datarate,padp_dutycycle,padn_dutycycle,padp_padn_dutycycle,padn_padp_dutycycle,padp_risetime,padp_falltime,padn_risetime,padn_falltime
+psim3tx275,ddr5,13.00000,1.00000,1.00000,1.00000,0.,0.,0.,0.,1.02400,0.94500,-40.00000,3.2000e+09,53.12723,53.09957,49.96336,50.03664,1.6005e-10,1.6053e-10,1.6115e-10,1.6051e-10

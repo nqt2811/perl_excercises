@@ -1,0 +1,15 @@
+###################################################################################
+Write perl script ex1.pl with below requirements:
+
+1. Input:
+  Year of birth of:
+  - Tom   : 1989
+  - Jerry : 1990
+  - Mickey: 1988
+  - Minie : 1989
+
+2. Require:
+  - From 2015 to 2035, print Tom's age for each 2-years
+  - Compare age of Jerry, Mickey, Minie to Tom and print the comparison: (elder | younger | as young as)
+
+###################################################################################

@@ -1,0 +1,20 @@
+###################################################################################
+Write perl script ex2.pl with below requirements:
+
+1. Input:
+  - array_a: contains alphabet char from a to z
+
+2. Require: 
+  - print array_a
+  - count number elements of array_a
+  - create array_b:
+    + same number elements with array_a
+    + contain even numbers from 0: {0, 2, 4, 6,...}
+  - print array_b
+  - remove the 20 last elements of each arrays, print edited arrays 
+  - print current directory name.
+  - Create sub directory in current directory with name and structure like this: {current_dir_name}_{your_user_name}/{current_dir_name}
+    Ex: Current dir is ex2 and username is datt
+        Create dir with structure: ex2_datt/ex2
+
+###################################################################################

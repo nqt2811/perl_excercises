@@ -1,0 +1,26 @@
+###################################################################################
+Write perl script ex5.pl with below requirements:
+
+1. Input: input script at below link
+   "/home/<user>/training/perl/data/${exercise}/run_pnr.csh" (1)
+   ${exercise}: auto get your current directory name. Such as: ex1, ex2, ex3....
+
+2. Requirement:
+  - Open the script (1) and replace string:
+  "${PERSEUS_HOME}/src/perl/script/psub.pl" --> "qsub"
+  "dragonx" --> "test"
+  "module load synopsys/synopsys" --> "source /tools/.cshrc.tools.train"
+  - Open the script (1) and remove string: "\""
+  - Open the script (1) and modify the mem (m_mem_free) for each pnr_step from 20G to
+    +10G (FLOORPLAN) 
+    +11G (PLACE)     
+    +12G (CTS_CCD)   
+    +13G (CTS_RT)    
+    +14G (ROUTE)     
+    +15G (ROUTE_OPT) 
+    +16G (CHIP_FINISH)
+    +17G (METAL_FILL)
+    +18G (EXPORT)    
+  - Write result to the mod_script named "run_pnr.mod.csh" at current directory
+###################################################################################
+

@@ -1,0 +1,25 @@
+###################################################################################
+Write perl script ex3.pl with below requirements:
+
+1. Input: input report at below link
+   "/home/<user>/training/perl/data/${exercise}/report.rpt"
+   ${exercise}: auto get your current directory name. Such as: ex1, ex2, ex3....
+
+2. Requirement:
+  - print link of input report
+  - open input report and read the information about "Startpoint", "Endpoint" and "slack"
+  - print the information of each timing path with below format:
+
+    ------------------------------------------------------------------------------------
+    Startpoint                          Endpoint                                   Slack
+    ------------------------------------------------------------------------------------
+    startpoint A                        endpoint A1                                slack1
+                                        endpoint A2                                slack2
+                                        endpoint A3                                slack3
+    ------------------------------------------------------------------------------------
+    startpoint B                        endpoint B1                                slack3
+                                        endpoint B2                                slack4
+  (Print Startpoint-Endpoint-Slack of each timing path. Group by startpoint)
+
+* Hint: Input is reported by ICC. From which, startpoints have been grouped
+###################################################################################

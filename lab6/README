@@ -1,0 +1,16 @@
+ Create Perl script to extract data to .csv file from files in "outfiles/pXXX/pXXX.mt0" (use Hash array)
+- Data in *.mt0 files have format:
+  <array names>
+  <array values>
+- Generate *.mt0_reformatted files from *.mt0 files in the same directories follow below format:
+ <name 1> = <value 1>
+ <name 2> = <value 2>
+ <name N> = <value N>
+- Collect and format the below params to a sim3tx_collect_data.csv file (format csv file to see the clearly data (columns, rows) when open by excel)
+ permutation  mode  param_modelfile  param_rmodellib  param_cmodellib  param_bjtmodellib  param_mciterations  param_typ  param_cmax  param_cmin  param_vddio  param_vdd  param_temp  param_datarate  padp_dutycycle  padn_dutycycle  padp_padn_dutycycle  padn_padp_dutycycle  padp_risetime  padp_falltime  padn_risetime  padn_falltime
+<permutation value>  <mode value> ... <>
+Note:
+(1) - <permutation value> is directory name pXXX in outfiles
+    - <mode value> is collect by find the value of params "param_ddr*" and "param_lpddr*", that have value is 1, we return "ddr*" or "lpddr*"
+(2) other parameters can be collected directly in mt0 or mt0_reformatted files
+- Question: What is the difference betwwen arrays and hashes ? What is in advances of hash ?
